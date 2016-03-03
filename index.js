@@ -47,8 +47,8 @@ module.exports = function(req, res, next, validations) {
 		if (asyncValidations.length) {
 			var promises = [];
 			for (var i = 0, length = asyncValidations.length; i < length; i++) {
-				var promise = new Promise(function(resolve, reject) {
-					asyncValidations[i].validation(req, resolve, reject);
+				var promise = new Promise(function(resolve) {
+					asyncValidations[i].validation(req, resolve);
 				});
 				promises.push(promise);
 			}
