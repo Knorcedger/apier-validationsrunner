@@ -1,7 +1,7 @@
 {
   "name": "apier-validationsrunner",
   "description": "Runs the request validations. Sync and async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Knorcedger",
   "bugs": "https://github.com/Knorcedger/apier-validationsrunner/issues",
   "dependencies": {
